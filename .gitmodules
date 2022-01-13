@@ -1,3 +1,6 @@
 [submodule "english-note-server"]
 	path = english-note-server
 	url = https://github.com/Potewo/english-note-server.git
+[submodule "english-note"]
+	path = english-note
+	url = https://github.com/Potewo/english-note.git
