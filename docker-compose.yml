@@ -1,17 +1,16 @@
 version: '3'
 services:
   english-note:
-    build: ./english-note/Dockerfile
+    build: ./english-note/
     image: english-note
     container_name: english-note
     ports:
       - 8080:80
   english-note-server:
-    build: ./english-note-server/Dockerfile
+    build: ./english-note-server/
     image: english-note-server
     container_name: english-note-server
     ports:
-      - 80:1323
+      - 1323:1323
     volumes:
-      - ./saveFiles/saveFile.json:/go/src/app/saveFile.json
-      - ./saveFiles/recordSaveFile.json:/go/src/app/saveFile.json
+      - ./saveFiles:/go/src/app/saveFiles
