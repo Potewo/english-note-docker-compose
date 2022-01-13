@@ -1,0 +1,3 @@
+[submodule "english-note-server"]
+	path = english-note-server
+	url = https://github.com/Potewo/english-note-server.git
